@@ -22,9 +22,12 @@ This time, you'll define a CNN architecture. Instead of an MLP, which used linea
 
 A network with 2 convolutional layers is shown in the image below and in the code, and you've been given starter code with one convolutional and one maxpooling layer.
 
-<img src='notebook_ims/2_layer_conv.png' height=50% width=50% />
-TODO: Define a model with multiple convolutional layers, and define the feedforward metwork behavior.
 
 The more convolutional layers you include, the more complex patterns in color and shape a model can detect. It's suggested that your final model include 2 or 3 convolutional layers as well as linear layers + dropout in between to avoid overfitting.
 
 It's good practice to look at existing research and implementations of related models as a starting point for defining your own models. You may find it useful to look at this PyTorch classification example or this, more complex Keras example to help decide on a final structure.
+
+
+# Specify Loss Function and Optimizer
+
+Decide on a loss and optimization function that is best suited for this classification task. The linked code examples from above, may be a good starting point; this PyTorch classification example or this, more complex Keras example. Pay close attention to the value for learning rate as this value determines how your model converges to a small error.
